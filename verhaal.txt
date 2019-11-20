@@ -1,0 +1,71 @@
+Je gaat op vakantie naar een eiland in america, terwijl je onderweg bent is er een storm en wordt de vliegtuig geraakt door blitsem. de vliegtuig stort naar beneden! wat doe je? 
+
+button 1 = panieken en hopen dat je op het water land en overleeft.
+
+button 2 = een parachute zoeken, en naar beneden springen.
+
+(als je button 1 klikt ga je dood)
+
+(als je button 2 klikt moet je de parachute op het scherm klikken om te overleven, en verder in het verhaal te komen, als je er niet op klikt krijg je een scherm te zien dat je dood bent.)
+
+dan land je op een eiland, en je ziet niemand om je heen. je hebt te veel pijn van het landen en je bloed op je been. dus je moet wat vinden om het bloed te stoppen. wat doe je?
+
+button 1 = in het jungle lopen om wat te vinden
+
+button 2 = blijven liggen en hopen dat iemand je vind. 
+
+(wanneer je button 1 klikt zie je een foto van de jungle waar je in loopt en dan kan je op dingen klikken die je kunnen helpen met het stoppen van het bloeden.)
+
+(waneer je button 2 klikt val je in slaap en eet een slang je op.)
+
+dan komt er een scherm met denk je dat je genoeg spullen hebt om je bloed te stoppen?
+
+(als je nee klikt komt er een scherm dat je probeert wat te doen met de spullen die je hebt om je bloed te stoppen en dat lukt niet en dan ruikt een slang je bloed en eet hij je op.)
+(als je ja klikt en je hebt genoeg spullen ga je naar de volgende scherm)
+
+(op die volgende scherm komt dat je het bloeden stopt en dan krijg je 3 opties van wat je dan gaat doen.)
+
+button 1 = ga je zwemmen en hopen dat je dichtbij een eiland bent
+
+button 2 = ga je op zoek naar spullen om een bootje te maken
+
+button 3 = ga je blijven kamperen op het eiland en hopen dat mensen je vinden
+
+(als je op button 1 klikt begin je te zwemmen en kan je maar niks vinden en sterf je omdat je te moe bent)
+
+(als je op button 2 klikt krijg je een paar verschillende schermen te zien van locaties waar je op spullen kan klikken om een bootje te maken, je kan dus steeds op een knop klikken waar staat verder gaan om naar de volgende locatie te gaan.)
+
+(als je op button 3 klikt ga je een kampeer plek zoeken, en zal er een scherm komen met 1 week later... en dan dat er een helikopter je komt ophalen maar net voordat de helikopter land je word gebeten door een slang en je dood gaat.)
+
+nadat je alle locaties heb bezocht bij optie 2:
+
+(als je op alle benodigde spullen hebt geklikt maak je een bootje en ga je verder in het verhaal)
+
+(als je niet op alle benodigde spullen hebt geklikt maak je het bootje maar is het bootje veel zwakker en zal het bootje kapot gaan op het water en zal je verdrinken)
+
+wanneer je verder gaat in het verhaal maak je het bootje en komt er opeens een wolf op je af van achter. 
+
+(je had op een zakmes kunnen klikken terwijl je aan het zoeken was voor spullen voor het bootje, als je daarop hebt geklikt vecht je de wolf en win je en ga je verder het verhaal in, als je er niet op hebt geklikt eet hij je op.)
+
+(nadat je de wolf hebt vermoord maak je het bootje af en ga je varen, daarna krijg je 2 buttons met weet je zeker dat je wilt gaan varen?)
+
+(missschien kan ik een soort gevecht toevoegen tegen de wolf waarmee je op buttons kan klikken met hoe je gaat vechten)
+
+button 1 = ja
+(als je op ja klikt ga je het bootje op en ga je varen, en ga je verder het verhaal in)
+
+button 2 = nee
+(als je op nee klikt ga je nog even slapen in een ruimte waar je denkt dat het veilig is maar terwijl je aan het zoeken bent vallen er 5 slangen je aan en eten ze je op voordat je wat kan doen.)
+
+je gaat de boot op en gaat varen. na een paar uur zie je land op zicht maar er komt een hoge vloed golf op je af. wat doe je?
+
+button 1 = door varen 
+
+button 2 = wachten
+
+(als je op button 1 klikt komt er een scherm dat je doorvaart en je bootje kapot gaat en je verdrinkt.)
+
+(als je op button 2 klikt wacht je totdat het echt veilig is en dan vaar je door. En strand je op een strand met heel veel mensen. En je hebt het spel afgemaakt.) 
+
+
+

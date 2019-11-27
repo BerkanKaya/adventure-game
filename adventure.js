@@ -230,7 +230,7 @@ function level9(){
 	document.getElementById('description').innerText = "Het bloeden is gestopt, Zoek wapens";
 	document.getElementById('description').style.display = "none";
 	document.getElementById('text1').style.display = "block";
-	document.getElementById('text1').innerText = "Het bloeden is gestopt, Zoek nu zoveel mogelijk wapens";
+	document.getElementById('text1').innerText = "Het bloeden is gestopt, Zoek nu een wapen om jezelf te verdedigen";
 	document.getElementById('button1').onclick = dood4;
 	document.getElementById('button2').style.display = "none";
 	document.getElementById('button1').style.display = "none";
@@ -300,9 +300,9 @@ function dood6(){
 		document.body.style.backgroundImage = "url('image/fire.gif')";
 
 		setTimeout(function() {
-			document.body.style.backgroundImage = "url('image/blood.gif')";
-			document.body.style.backgroundColor = "black"; 
-		}, 2000);
+			document.body.style.backgroundColor = "#8a0303";
+			document.body.style.backgroundImage = "none"; 
+		}, 1500);
 	}, 1300);
 
 	document.getElementById('button').innerText = "Try again";
@@ -324,11 +324,31 @@ function dood6(){
 
 }
 function level10(){
-	document.body.style.backgroundImage = "url('image/sub2.jpg')";
-	document.getElementById('button').innerText = "Spear hem";
+	document.body.style.backgroundImage = "url('image/scorpion.gif')";
+	document.getElementById('button').innerText = "gooi vuurbal";
 	document.getElementById('button').onclick = level11;
 	document.getElementById('title').innerText = "Raiden goot een supriseattack op je, maar je blockt em!";
-	document.getElementById('description').innerText = "Nu kan je aanvallen! wat doe je, spear of bevries je hem? ";
+	document.getElementById('description').innerText = "Nu kan je aanvallen! wat doe je, Attack je hem snel of gooi je een vuurbal?";
+	document.getElementById('description').style.display = "block";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood7;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "inline-block";
+	document.getElementById('button1').innerText = "attack hem";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+
+}
+function level11(){
+	document.body.style.backgroundImage = "url('image/fight.gif')";
+	document.getElementById('button').innerText = "Spear hem";
+	document.getElementById('button').onclick = level11;
+	document.getElementById('title').innerText = "Nice!";
+	document.getElementById('description').innerText = "Je hit Raiden met 2 zwaarden en steekt hem in zijn gezicht! Wat nu?";
 	document.getElementById('description').style.display = "block";
 	document.getElementById('text1').style.display = "none";
 	document.getElementById('text1').innerText = "";
@@ -341,13 +361,36 @@ function level10(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
-
-}
-function level11(){
-
 }
 function dood7(){
+	document.body.style.backgroundImage = "url('image/raiden.gif')";
+	setTimeout(function() {
+		document.body.style.backgroundImage = "url('image/fire.gif')";
+
+		setTimeout(function() {
+			document.body.style.backgroundColor = "#8a0303";
+			document.body.style.backgroundImage = "none"; 
+		}, 1500);
+	}, 1300);
+
+	document.getElementById('button').innerText = "Try again";
+	document.getElementById('button').onclick = refresh1;
+	document.getElementById('title').innerText = "De vuurbaal gooien duurde te lang, Raiden heeft je vermoord!";
+	document.getElementById('description').innerText = "Het bloeden is gestopt, Zoek wapens";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood4;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijven liggen";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
 
 }
+
 
 

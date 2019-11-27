@@ -130,12 +130,13 @@ function dood3(){
 	document.getElementById('title').innerText = "Je bent dood gebloed...";
 	document.getElementById('description').innerText = "";
 	document.getElementById('button1').onclick = level7;
-	document.getElementById('button1').style.display = "";
-	document.getElementById('button2').style.display = "none"
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button2').style.display = "none";
 	document.getElementById('inventory-item').style.display = "none";
 	document.getElementById('parachute').style.display = "none";
 	document.getElementById('troll').style.display = "none";
 	document.getElementById('doekje').style.display = "none";
+	document.getElementById('text').style.display= "none";
 }
 function refresh1(){
 	location = location;
@@ -146,7 +147,11 @@ function level7(){
 	document.getElementById('button').innerText = "Verder";
 	document.getElementById('button').onclick = dood3;
 	document.getElementById('title').innerText = "Zoek spullen!";
-	document.getElementById('description').innerText = "Zoek naar spullen die je kunnen helpen om het bloeden te stoppen! ";
+	var text = document.createElement("h1");
+	text.innerHTML = "Zoek naar spullen die je kunnen helpen om het bloeden te stoppen! ";
+	text.id = "text";
+	document.body.appendChild(text);
+	document.getElementById('description').style.display = "none";
 	document.getElementById('button1').onclick = dood3;
 	document.getElementById('button1').style.display = "none"
 	document.getElementById('button2').style.display = "none"
@@ -166,21 +171,182 @@ function level7(){
 function level8(){
 	document.body.style.backgroundImage = "url('image/jungle2.jpg')";
 	document.getElementById('button').innerText = "Verder";
-	document.getElementById('button').onclick = level9;
+	document.getElementById('button').onclick = dood4;
 	document.getElementById('title').innerText = "Zoek verder!";
 	var text = document.createElement("h1");
-	text.innerHTML = "AAAAAAAAAAAAAAiiiiiiiiiii";
-	document.getElementById('description').innerText = "Blijf zoeken naar nog meer spullen om het bloeden verder te stoppen!";
+	text.innerHTML = "Je bloed nog steeds. Zoek wat anders, anders bloed je uit!";
+	text.id = "text1";
+	document.body.appendChild(text);
+	document.getElementById('text').style.display = "none";
+	document.getElementById('description').innerText = "";
 	document.getElementById('description').style.display= "none";
-	document.getElementById('button1').onclick = dood3;
-	document.getElementById('button1').style.display = "none"
+	document.getElementById('button1').onclick = dood4;
 	document.getElementById('button2').style.display = "none"
+	document.getElementById('button1').style.display = "none"
 	document.getElementById('button1').innerText = "Blijven liggen";
 	document.getElementById('parachute').style.display = "none";
 	document.getElementById('troll').style.display = "none";
+	document.getElementById('doekje').style.display = "none";
+	var mes = document.createElement("img");	
+	mes.src = "image/mes.png";
+	mes.id = "mes";
+	var mesClicked = false;
+	var doekjeClicked = false;
+	mes.onclick = function() {
+		document.getElementById('inventory-item').src = "image/mes.png";
+		document.getElementById("mes").style.display = "none";
+		inventory = "mes";
+		mesClicked = true;
+		if(doekjeClicked) {
+			document.getElementById('button').onclick = level9;			
+		} else {
+			document.getElementById('button').onclick = dood4;
+		}
+	};
+	document.body.appendChild(mes);
+
+	var doekje1 = document.createElement("img");	
+	doekje1.src = "image/doekje.png";
+	doekje1.id = "doekje1";
+	doekje1.onclick = function() {
+		document.getElementById('inventory-item').src = "image/doekje.png";
+		document.getElementById("doekje1").style.display = "none";
+		inventory = "doekje1";
+		doekjeClicked = true;
+		if(mesClicked) {
+			document.getElementById('button').onclick = level9;			
+		} else {
+			document.getElementById('button').onclick = dood5;
+		}
+	};
+	document.body.appendChild(doekje1);
+}
+
+function level9(){
+	document.body.style.backgroundImage = "url('image/strand.jpg')";
+	document.getElementById('button').innerText = "Verder";
+	document.getElementById('button').onclick = dood6;
+	document.getElementById('title').innerText = "Zoek wapens!";
+	document.getElementById('description').innerText = "Het bloeden is gestopt, Zoek wapens";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').style.display = "block";
+	document.getElementById('text1').innerText = "Het bloeden is gestopt, Zoek nu zoveel mogelijk wapens";
+	document.getElementById('button1').onclick = dood4;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijven liggen";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+
+	var dagger = document.createElement("img");	
+	dagger.src = "image/wapen.png";
+	dagger.id = "dagger";
+	dagger.onclick = function() {
+		document.getElementById('inventory-item').src = "image/wapen.png";
+		document.getElementById("dagger").style.display = "none";
+		inventory = "dagger";
+		document.getElementById('button').onclick = level10;
+	};
+	document.body.appendChild(dagger);
+}
+
+
+
+function dood4(){
+	document.body.style.backgroundImage = "url('image/wasted2.jpg')";
+	document.getElementById('button').innerText = "Try again";
+	document.getElementById('button').onclick = refresh1;
+	document.getElementById('title').innerText = "Er komt een wolf op je af en die veroord je met de mes!, Maar je bloed dood....";
+	document.getElementById('description').innerText = "";
+	document.getElementById('button1').onclick = level7;
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('inventory-item').style.display = "none";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('doekje').style.display = "none";
+	document.getElementById('text').style.display= "none";
+	document.getElementById('text1').style.display= "none";
+	document.getElementById('mes').style.display= "none";
+	document.getElementById('doekje1').style.display= "none";
+}
+function dood5(){
+	document.body.style.backgroundImage = "url('image/wasted2.jpg')";
+	document.getElementById('button').innerText = "Try again";
+	document.getElementById('button').onclick = refresh1;
+	document.getElementById('title').innerText = "Je stop het bloeden!, maar er komt een wolf op je af en die vermoord je!";
+	document.getElementById('description').innerText = "";
+	document.getElementById('button1').onclick = level7;
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('inventory-item').style.display = "none";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('doekje').style.display = "none";
+	document.getElementById('text').style.display= "none";
+	document.getElementById('text1').style.display= "none";
+	document.getElementById('mes').style.display= "none";
+	document.getElementById('doekje1').style.display= "none";
+	document.getElementById('dagger').style.display = "none";
 
 }
-function level9(){
+
+
+function dood6(){
+	document.body.style.backgroundImage = "url('image/raiden.gif')";
+	setTimeout(function() {
+		document.body.style.backgroundImage = "url('image/fire.gif')";
+
+		setTimeout(function() {
+			document.body.style.backgroundImage = "url('image/blood.gif')";
+			document.body.style.backgroundColor = "black"; 
+		}, 2000);
+	}, 1300);
+
+	document.getElementById('button').innerText = "Try again";
+	document.getElementById('button').onclick = refresh1;
+	document.getElementById('title').innerText = "Raiden heeft je vermoord!";
+	document.getElementById('description').innerText = "Het bloeden is gestopt, Zoek wapens";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood4;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijven liggen";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+
+}
+function level10(){
+	document.body.style.backgroundImage = "url('image/sub2.jpg')";
+	document.getElementById('button').innerText = "Spear hem";
+	document.getElementById('button').onclick = level11;
+	document.getElementById('title').innerText = "Raiden goot een supriseattack op je, maar je blockt em!";
+	document.getElementById('description').innerText = "Nu kan je aanvallen! wat doe je, spear of bevries je hem? ";
+	document.getElementById('description').style.display = "block";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood7;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "inline-block";
+	document.getElementById('button1').innerText = "Bevries hem";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+
+}
+function level11(){
+
+}
+function dood7(){
 
 }
 

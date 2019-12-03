@@ -291,6 +291,7 @@ function dood5(){
 	document.getElementById('doekje1').style.display= "none";
 	document.getElementById('dagger').style.display = "none";
 
+
 }
 
 
@@ -303,11 +304,11 @@ function dood6(){
 			document.body.style.backgroundColor = "#8a0303";
 			document.body.style.backgroundImage = "none"; 
 		}, 1000);
-	}, 1300);
+	}, 1200);
 
 	document.getElementById('button').innerText = "Try again";
 	document.getElementById('button').onclick = refresh1;
-	document.getElementById('title').innerText = "Raiden heeft je vermoord!";
+	document.getElementById('title').innerText = "Raiden heeft je vermoord! Je hebt de wapen niet opgepakt";
 	document.getElementById('description').innerText = "Het bloeden is gestopt, Zoek wapens";
 	document.getElementById('description').style.display = "none";
 	document.getElementById('text1').style.display = "none";
@@ -321,10 +322,15 @@ function dood6(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
 
 }
 function level10(){
 	document.body.style.backgroundImage = "url('image/scorpion.gif')";
+	setTimeout(function() {
+		document.body.style.backgroundImage = "url('image/begin.gif')";
+	}, 1500);
+
 	document.getElementById('button').innerText = "gooi vuurbal";
 	document.getElementById('button').onclick = level11;
 	document.getElementById('title').innerText = "Raiden goot een supriseattack op je, maar je blockt em!";
@@ -341,6 +347,7 @@ function level10(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
 
 }
 function level11(){
@@ -348,7 +355,7 @@ function level11(){
 	document.getElementById('button').innerText = "Attack met zwaarden";
 	document.getElementById('button').onclick = level12;
 	document.getElementById('title').innerText = "Nice!";
-	document.getElementById('description').innerText = "Je hit Raiden met een FireballSuperManPunch! Wat doe je nu?";
+	document.getElementById('description').innerText = "Je hit Raiden met een FireballSuperManPunch!";
 	document.getElementById('description').style.display = "block";
 	document.getElementById('text1').style.display = "none";
 	document.getElementById('text1').innerText = "";
@@ -361,6 +368,7 @@ function level11(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
 }
 function dood7(){
 	document.body.style.backgroundImage = "url('image/raiden.gif')";
@@ -370,8 +378,8 @@ function dood7(){
 		setTimeout(function() {
 			document.body.style.backgroundColor = "#8a0303";
 			document.body.style.backgroundImage = "none"; 
-		}, 1300);
-	}, 1300);
+		}, 1000);
+	}, 1200);
 
 	document.getElementById('button').innerText = "Try again";
 	document.getElementById('button').onclick = level10;
@@ -389,6 +397,7 @@ function dood7(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
 
 }
 function dood8(){
@@ -418,13 +427,14 @@ function dood8(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
 
 }
 function level12(){
 	document.body.style.backgroundImage = "url('https://media.giphy.com/media/1yTeIHk678iVIEJmUD/giphy.gif')";
 	document.getElementById('button').innerText = "Get Over Here!";
 	document.getElementById('button').onclick = level13;
-	document.getElementById('title').innerText = "Raiden hit terug voordat je hem kan aanvallen! Wat doe je nu?";
+	document.getElementById('title').innerText = "Raiden hit terug voordat je hem kan aanvallen!";
 	document.getElementById('description').innerText = "";
 	document.getElementById('description').style.display = "none";
 	document.getElementById('text1').style.display = "none";
@@ -438,13 +448,14 @@ function level12(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
 }
 function level13(){
 	document.body.style.backgroundImage = "url('image/fight2.gif')";
 	document.getElementById('button').innerText = "Finish HIM!";
 	document.getElementById('button').onclick = level14;
 	document.getElementById('title').innerText = "Je hit Raiden Recht door zijn hoofd heen!";
-	document.getElementById('description').innerText = "Raiden begint hevig te bloeden!";
+	document.getElementById('description').innerText = "";
 	document.getElementById('description').style.display = "block";
 	document.getElementById('text1').style.display = "none";
 	document.getElementById('text1').innerText = "";
@@ -457,10 +468,11 @@ function level13(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
 }
 function level14(){
 	document.body.style.backgroundImage = "url('https://media.giphy.com/media/1msBmKa03MPCPXYudX/giphy.gif')";
-	document.getElementById('button').innerText = "Gooi Raiden de lucht in";
+	document.getElementById('button').innerText = "Spring en hit";
 	document.getElementById('button').onclick = level15;
 	document.getElementById('title').innerText = "Je mist en Raiden hit je terug!";
 	document.getElementById('description').innerText = "";
@@ -476,6 +488,7 @@ function level14(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
 }
 function dood9(){
 	document.body.style.backgroundImage = "url('image/raiden.gif')";
@@ -491,7 +504,7 @@ function dood9(){
 	document.getElementById('button').innerText = "Try again";
 	document.getElementById('button').onclick = level10;
 	document.getElementById('title').innerText = "Wat dacht je?";
-	document.getElementById('description').innerText = "Het bloeden is gestopt, Zoek wapens";
+	document.getElementById('description').innerText = "";
 	document.getElementById('description').style.display = "none";
 	document.getElementById('text1').style.display = "none";
 	document.getElementById('text1').innerText = "";
@@ -504,18 +517,19 @@ function dood9(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
 
 }
 function level15(){
 	document.body.style.backgroundImage = "url('https://media.giphy.com/media/OR2M9cK07rhqk91e0P/giphy.gif')";
 	document.getElementById('button').innerText = "FATALITY";
-	document.getElementById('button').onclick = level15;
-	document.getElementById('title').innerText = "COMBOOOOOOOOOOOO";
+	document.getElementById('button').onclick = dood11;
+	document.getElementById('title').innerText = "Raiden springt de lucht in en jij pakt hem voordat hij jou wat kan doen!";
 	document.getElementById('description').innerText = "";
 	document.getElementById('description').style.display = "none";
 	document.getElementById('text1').style.display = "none";
 	document.getElementById('text1').innerText = "";
-	document.getElementById('button1').onclick = dood11;
+	document.getElementById('button1').onclick = level16;
 	document.getElementById('button2').style.display = "none";
 	document.getElementById('button1').style.display = "inline-block";
 	document.getElementById('button1').innerText = "Blijf attacken";
@@ -526,6 +540,46 @@ function level15(){
 	document.getElementById('dagger').style.display = "none";
 }
 function dood10(){
+	document.body.style.backgroundImage = "url('image/knock.gif')";
+	document.getElementById('button').innerText = "Verder";
+	document.getElementById('button').onclick = extra;
+	document.getElementById('title').innerText = "Raiden hit je keihard en je gaat knockout!";
+	document.getElementById('description').innerText = "";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood4;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijven liggen";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+}
+function extra(){
+	document.body.style.backgroundImage = "url('image/finish.gif')";
+	document.getElementById('button').innerText = "Try again";
+	document.getElementById('button').onclick = level10;
+	document.getElementById('title').innerText = "Raiden FINISHED je!";
+	document.getElementById('description').innerText = "";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood4;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijven liggen";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
+}
+function dood11(){
 	document.body.style.backgroundImage = "url('image/raiden.gif')";
 	setTimeout(function() {
 		document.body.style.backgroundImage = "url('image/fire.gif')";
@@ -538,8 +592,8 @@ function dood10(){
 
 	document.getElementById('button').innerText = "Try again";
 	document.getElementById('button').onclick = level10;
-	document.getElementById('title').innerText = "Raiden heeft nog steeds genoeg energie over en vermoord jou zonder dat je het ziet aankomen!";
-	document.getElementById('description').innerText = "Het bloeden is gestopt, Zoek wapens";
+	document.getElementById('title').innerText = "Raiden zag het allang aankomen! Hij dodged en FATALITY'T Jou!";
+	document.getElementById('description').innerText = "";
 	document.getElementById('description').style.display = "none";
 	document.getElementById('text1').style.display = "none";
 	document.getElementById('text1').innerText = "";
@@ -552,7 +606,152 @@ function dood10(){
 	document.getElementById('mes').style.display = "none";
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
 }
+function level16(){
+	document.body.style.backgroundImage = "url(image/knock.gif)";
+	document.getElementById('button').innerText = "Verder";
+	document.getElementById('button').onclick = level17;
+	document.getElementById('title').innerText = "Raiden hit je KEIHARD terug! en hij knocked je out!";
+	document.getElementById('description').innerText = "";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood11;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijf attacken";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
+}
+function level17(){
+	document.body.style.backgroundImage = "url('image/finish.gif')";
+	document.getElementById('button').innerText = "Verder";
+	document.getElementById('button').onclick = extra1;
+	document.getElementById('title').innerText = "Raiden FINISHED je!";
+	document.getElementById('description').innerText = "";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood11;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijf attacken";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+
+	var scorp = document.createElement("img");	
+	scorp.src = "image/fire.jpg";
+	scorp.id = "scorp";
+	scorp.onclick = function() {
+		document.getElementById('inventory-item').src = "image/fire.jpg";
+		document.getElementById("scorp").style.display = "none";
+		inventory = "scorp";
+		document.getElementById('button').onclick = level18;
+	};
+	document.body.appendChild(scorp);
+}
+function level18(){
+	document.body.style.backgroundImage = "url('image/end1.gif')";
+	document.getElementById('button').innerText = "Verder";
+	document.getElementById('button').onclick = level19;
+	document.getElementById('title').innerText = "Je hebt je clone opgeroepen!";
+	document.getElementById('description').innerText = "";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood11;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijf attacken";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
+}
+function extra1(){
+	document.body.style.backgroundImage = "url('image/finish.gif')";
+	document.getElementById('button').innerText = "Try again";
+	document.getElementById('button').onclick = level10;
+	document.getElementById('title').innerText = "Raiden FINISHED je! Je hebt je clone niet opgeroepen..";
+	document.getElementById('description').innerText = "";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood4;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijven liggen";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
+}
+function level19(){
+	document.body.style.backgroundImage = "url('image/finish1.gif')";
+	setTimeout(function() {
+		document.body.style.backgroundImage = "url('image/end.gif')";
+			setTimeout(function() {
+				document.body.style.backgroundImage = "url('image/finish2.gif')"; 
+					setTimeout(function() {
+					document.body.style.backgroundImage = "url('image/fatality.gif')"; 
+					document.body.style.backgroundColor = "black"; 
+			}, 4100);
+		}, 1880);
+	}, 3600);
+
+	document.getElementById('button').innerText = "END";
+	document.getElementById('button').onclick =	end5;
+	document.getElementById('title').innerText = "De clone FINISHED Raiden";
+	document.getElementById('description').innerText = "";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button').style.display = "none";
+	document.getElementById('button1').onclick = dood11;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijf attacken";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
+}
+function end5(){
+	document.body.style.backgroundImage = "url('image/end2.gif')";
+	document.getElementById('button').innerText = "";
+	document.getElementById('button').onclick = level10;
+	document.getElementById('title').innerText = "THE END";
+	document.getElementById('description').innerText = "";
+	document.getElementById('description').style.display = "none";
+	document.getElementById('text1').style.display = "none";
+	document.getElementById('text1').innerText = "";
+	document.getElementById('button1').onclick = dood4;
+	document.getElementById('button2').style.display = "none";
+	document.getElementById('button1').style.display = "none";
+	document.getElementById('button1').innerText = "Blijven liggen";
+	document.getElementById('parachute').style.display = "none";
+	document.getElementById('troll').style.display = "none";
+	document.getElementById('mes').style.display = "none";
+	document.getElementById('text').style.display = "none";
+	document.getElementById('dagger').style.display = "none";
+	document.getElementById('scorp').style.display = "none";
+}
+
+
+
 
 
 

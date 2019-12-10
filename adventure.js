@@ -1,3 +1,4 @@
+
 document.body.style.backgroundSize = "cover";
 level1();
 var inventory;
@@ -326,6 +327,7 @@ function dood6(){
 
 }
 function level10(){
+
 	document.body.style.backgroundImage = "url('image/scorpion.gif')";
 	setTimeout(function() {
 		document.body.style.backgroundImage = "url('image/begin.gif')";
@@ -348,6 +350,7 @@ function level10(){
 	document.getElementById('text').style.display = "none";
 	document.getElementById('dagger').style.display = "none";
 	document.getElementById('scorp').style.display = "none";
+
 
 }
 function level11(){
